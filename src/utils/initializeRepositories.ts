@@ -1,0 +1,26 @@
+import { dataSource } from '../configs/orm.config';
+import { AuthorEntity } from '../entities/author.entity';
+import { BookEntity } from '../entities/book.entity';
+import { CategoryEntity } from '../entities/category.entity';
+import { CommentEntity } from '../entities/comment.entity';
+import { GenreEntity } from '../entities/genre.entity';
+import { LanguageEntity } from '../entities/language.entity';
+import { OrderEntity } from '../entities/order.entity';
+import { PromoCodeEntity } from '../entities/promocode.entity';
+import { PublisherEntity } from '../entities/publishers.entity';
+import { RefreshSessionEntity } from '../entities/refreshSession.entity';
+import { ResetPasswordEntity } from '../entities/resetPassword.entity';
+import { UserEntity } from '../entities/user.entity';
+
+export const bookRepository = dataSource.getRepository(BookEntity);
+export const userRepository = dataSource.getRepository(UserEntity);
+export const commentRepository = dataSource.getRepository(CommentEntity);
+export const orderRepository = dataSource.getRepository(OrderEntity);
+export const promoCodeRepository = dataSource.getRepository(PromoCodeEntity);
+export const refreshSessionRepository = dataSource.getRepository(RefreshSessionEntity);
+export const resetPasswordRepository = dataSource.getRepository(ResetPasswordEntity);
+export const authorRepository = dataSource.getRepository(AuthorEntity);
+export const languageRepository = dataSource.getRepository(LanguageEntity);
+export const categoryRepository = dataSource.getRepository(CategoryEntity);
+export const genreRepository = dataSource.getRepository(GenreEntity);
+export const publisherRepository = dataSource.getRepository(PublisherEntity);

@@ -1,0 +1,5 @@
+.env
+/node_modules/
+/build/
+dump.rdb
+.DS_Store
